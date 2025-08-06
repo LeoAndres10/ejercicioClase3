@@ -1,11 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import AlumnoProvider from './Providers/AlumnoProvider';
+import AlumnoComponent from './Componentes/AlumnoComponent';
+import FormularioAlumno from './Componentes/FormularioAlumno';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+  return(
+  <View style={styles.container}>
+
+
+      
+
+        <AlumnoProvider>
+          <AlumnoComponent></AlumnoComponent>
+          <FormularioAlumno></FormularioAlumno>
+        </AlumnoProvider>
+
+     
+
+
     </View>
   );
 }
