@@ -1,4 +1,4 @@
-import { Provider, useContext, useState } from "react";
+import {useContext, useState } from "react";
 import { Plantilla } from "../Modelos/Plantilla";
 import { View, ViewComponent } from "react-native";
 import { Alumno } from "../Modelos/Alumno";
@@ -11,7 +11,7 @@ export default function AlumnoProvider({children}: Plantilla){
     function agregarListaAlumno(alumnoObjeto: Alumno){
         setListaAlumnos([...listaAlumnos,alumnoObjeto]);
     }
-    
+
     return(
 
         <ContextAlumno.Provider value={{listaAlumnos,agregarListaAlumno}}>

@@ -1,6 +1,6 @@
 import { View,Text } from "react-native";
 import { ContextAlumno } from "../Contexto/ContextAlumno";
-import useAlumno from "../Providers/AlumnoProvider";
+import {useAlumno} from "../Providers/AlumnoProvider";
 
 export default function FormularioAlumno(){
  const {agregarListaAlumno, listaAlumnos} = useAlumno();
